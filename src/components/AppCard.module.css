@@ -1,0 +1,32 @@
+.title {
+    font-size: 0.9rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.image {
+    /* min-height: 15rem; */
+    background-color: #CCCCCC; 
+}
+
+.image img{
+    display: block;
+    object-fit: cover;
+    
+}
+
+
+.content {
+    padding: 1rem;
+    font-size: 0.8rem;
+    
+}
+
+.text {
+    margin: 0.5rem 0;
+    
+}
