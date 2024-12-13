@@ -6,6 +6,7 @@
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
+    margin-bottom: 2rem;
 }
 
 .image {
@@ -21,12 +22,12 @@
 
 
 .content {
-    padding: 1rem;
+    padding: 1rem ;
     font-size: 0.8rem;
-    
 }
 
 .text {
     margin: 0.5rem 0;
+    
     
 }

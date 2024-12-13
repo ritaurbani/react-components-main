@@ -21,10 +21,11 @@ body {
 .row {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .col {
-  width: 50%;
+  width: 60%
 }
 
 main {
