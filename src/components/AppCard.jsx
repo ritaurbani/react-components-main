@@ -9,7 +9,7 @@ function AppCard({title, image, content,tags}) {
     return (
         <div className={style.card}>
             <div className={style.image}>
-                <img src={imagePath} alt="" />
+                <img src={image ? imagePath : 'https://picsum.photos/400/300'} alt="" />
             </div>
             <div className={style.content}>
                 <div className={style.wrap}>
