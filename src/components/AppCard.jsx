@@ -1,20 +1,27 @@
 import AppButton from "./AppButton";
 import style from "./AppCard.module.css";
-import posts from "../data/posts"
+import posts from "../data/posts";
 
 
 
-function AppCard({title, image, content}) {
-
+function AppCard({title, image, content,tags}) {
+    const imagePath = `/img/${image}`;
     return (
         <div className={style.card}>
             <div className={style.image}>
-                <img src="/img/ciambellone.jpeg" alt="" />
+                <img src={imagePath} alt="" />
             </div>
             <div className={style.content}>
-                <h5 className={style.title}>{title}</h5>
+                <div className={style.wrap}>
+                    <h5 className={style.title}>{title}</h5>
+                    { tags.map((tag)=>(
+                        <span className={`${style.tag} ${tag === "html" ? style.htmlt : ''} ${tag === "js" ? style.jst : ''} ${tag === "css" ? style.csst : ''}`}>{tag}</span>
+                    ))} 
+                </div>
                 <p className={style.text}>{content}</p>
-                <AppButton/>
+                {/* <span>{props.post.published ? 'Si' : 'No'}</span> */}
+
+                <AppButton />
             </div>
         </div>
     )

@@ -1,8 +1,8 @@
 const posts = [
     {
         id: 1,
-        title: "Titolo del Post",
-        image: 'image1.jpg',
+        title: "Titolo del Post A",
+        image: "ciambellone.jpeg",
         content:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
         tags: ["html", "css"],
@@ -10,17 +10,17 @@ const posts = [
     },
     {
         id: 2,
-        title: "Titolo del Post",
-        image: '',
+        title: "Titolo del Post B",
+        image: "ciambellone.jpeg",
         content:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
         tags: ["js", "css"],
-        published: true,
+        published: false,
     },
     {
         id: 3,
-        title: "Titolo del Post",
-        image: '',
+        title: "Titolo del Post C",
+        image: "ciambellone.jpeg",
         content:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
         tags: ["js", "php"],
@@ -28,8 +28,8 @@ const posts = [
     },
     {
         id: 4,
-        title: "Titolo del Post",
-        image: 'image3.jpg',
+        title: "Titolo del Post D",
+        image: "ciambellone.jpeg",
         content:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.",
         tags: ["html"],

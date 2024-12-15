@@ -17,9 +17,8 @@
 .image img{
     display: block;
     object-fit: cover;
-    
+   
 }
-
 
 .content {
     padding: 1rem ;
@@ -28,6 +27,40 @@
 
 .text {
     margin: 0.5rem 0;
-    
-    
 }
+.wrap {
+    display: flex;
+    justify-content:space-between;
+    /* gap: 1rem;
+    margin-bottom: .5rem; */
+}
+
+.tags {
+    display: inline-block;
+    background-color: grey;
+    color: white;
+    padding: .5rem
+}
+
+.tag {
+    display: inline-block;
+    background-color: grey;
+    color: white;
+    padding: .5rem
+}
+
+.htmlt {
+    background-color: lightblue;
+}
+
+.jst {
+    background-color: lightgreen;
+}
+
+.phpt {
+    background-color: lightcoral;
+}
+.csst {
+    background-color: chocolate;
+}
+
