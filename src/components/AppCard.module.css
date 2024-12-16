@@ -31,8 +31,8 @@
 .wrap {
     display: flex;
     justify-content:space-between;
-    /* gap: 1rem;
-    margin-bottom: .5rem; */
+    /* gap: .5rem;
+    margin-bottom: .5rem;  */
 }
 
 .tags {
@@ -46,21 +46,22 @@
     display: inline-block;
     background-color: grey;
     color: white;
-    padding: .5rem
+    padding: .5rem;
+    border-radius: 10px;
 }
 
-.htmlt {
+.html {
     background-color: lightblue;
 }
 
-.jst {
+.js {
     background-color: lightgreen;
 }
 
-.phpt {
+.php {
     background-color: lightcoral;
 }
-.csst {
+.css {
     background-color: chocolate;
 }
 

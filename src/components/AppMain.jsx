@@ -25,6 +25,7 @@ function AppMain() {
 
                     {posts.map((post) => (
                         // post.published &&
+                        // (!post.published? "":
                         <div key={post.id} className="col">
                             <AppCard
                                 image={post.image}
@@ -37,6 +38,7 @@ function AppMain() {
                                 post={post}
                             /> */}
                         </div>
+                    // )
                     ))
                     }
 

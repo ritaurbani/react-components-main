@@ -4,8 +4,12 @@ import posts from "../data/posts";
 
 
 
-function AppCard({title, image, content,tags}) {
+function AppCard({title, image, content, tags}) {
     const imagePath = `/img/${image}`;
+
+  
+
+    
     return (
         <div className={style.card}>
             <div className={style.image}>
@@ -14,14 +18,16 @@ function AppCard({title, image, content,tags}) {
             <div className={style.content}>
                 <div className={style.wrap}>
                     <h5 className={style.title}>{title}</h5>
-                    { tags.map((tag)=>(
-                        <span className={`${style.tag} ${tag === "html" ? style.htmlt : ''} ${tag === "js" ? style.jst : ''} ${tag === "css" ? style.csst : ''}`}>{tag}</span>
+                    {/* per ogni tag aggiungiamo classe style.tag (comune a tutti i tag e una classe dinamica ex:style.html) */}
+                    { tags.map((curTag, index)=>(
+                        <span key={index} className={`${style.tag} ${style[curTag]}`}>{curTag}</span>
                     ))} 
                 </div>
                 <p className={style.text}>{content}</p>
                 {/* <span>{props.post.published ? 'Si' : 'No'}</span> */}
 
                 <AppButton />
+                
             </div>
         </div>
     )
